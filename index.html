@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Fluid Cloud</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/preview.js"></script>
+  </head>
+  <body>
+    <div id="Cover" class="cover">
+      <h1 class="cover-ti"><a href="index.html">FluidCloud</a></h1>
+      <div class="cover-nav">
+        <a href="https://github.com/zake7749/Web-Gallery">GitHub</a>|
+        <a href="index.html">Preview</a>|
+        <a href="gallery.html">Gallery</a>
+      </div>
+      <div class="cover-info" valign="center">
+        <p class="cover-info-Line">Share your path , Share your life</p>
+        <p>A web gallery designed with HTML5 & CSS3</p>
+      </div>
+    </div>
+
+    <div id="Preview" class="igPreview">
+      <div class="preview-line">Setting as a background image by clicking the photo you like</div>
+      <div class="igGrid" style="background:url('img/00.jpg');background-size:cover" onmouseover="showdetail(0)" onmouseout="closedetail(0)">
+        <div id ="0" class="igDetail" onclick="changeBackground('00.jpg')">Night</div>
+      </div>
+      <div class="igGrid" style="background:url('img/01.jpg');background-size:cover" onmouseover="showdetail(1)" onmouseout="closedetail(1)">
+        <div id ="1" class="igDetail" onclick="changeBackground('01.jpg')">Sakura</div>
+      </div>
+      <div class="igGrid" style="background:url('img/02.jpg');background-size:cover" onmouseover="showdetail(2)" onmouseout="closedetail(2)">
+        <div id ="2" class="igDetail" onclick="changeBackground('02.jpg')">mocha</div>
+      </div>
+      <div class="igGrid" style="background:url('img/03.jpg');background-size:cover" onmouseover="showdetail(3)" onmouseout="closedetail(3)">
+        <div id ="3" class="igDetail" onclick="changeBackground('03.jpg')">Moon</div>
+      </div>
+      <div class="igGrid" style="background:url('img/04.jpg');background-size:cover" onmouseover="showdetail(4)" onmouseout="closedetail(4)">
+        <div id ="4" class="igDetail" onclick="changeBackground('04.jpg')">Last Light</div>
+      </div>
+      <div class="igGrid" style="background:url('img/05.jpg');background-size:cover" onmouseover="showdetail(5)" onmouseout="closedetail(5)">
+        <div id ="5" class="igDetail" onclick="changeBackground('05.jpg')">Out of focus</div>
+      </div>
+      <div class="igGrid" style="background:url('img/06.jpg');background-size:cover" onmouseover="showdetail(6)" onmouseout="closedetail(6)">
+        <div id ="6" class="igDetail" onclick="changeBackground('06.jpg')">Planet</div>
+      </div>
+      <div class="igGrid" style="background:url('img/07.jpg');background-size:cover" onmouseover="showdetail(7)" onmouseout="closedetail(7)">
+        <div id ="7" class="igDetail" onclick="changeBackground('07.jpg')">Wine and Sunset</div>
+      </div>
+      <div class="igGrid" style="background:url('img/08.jpg');background-size:cover" onmouseover="showdetail(8)" onmouseout="closedetail(8)">
+        <div id ="8" class="igDetail" onclick="changeBackground('08.jpg')">The Place Promised in Our Early Days</div>
+      </div>
+      <div class="igGrid" style="background:url('img/09.jpg');background-size:cover" onmouseover="showdetail(9)" onmouseout="closedetail(9)">
+        <div id ="9" class="igDetail" onclick="changeBackground('09.jpg')">Lake Baikal</div>
+      </div>
+      <div class="igGrid" style="background:url('img/10.jpg');background-size:cover" onmouseover="showdetail(10)" onmouseout="closedetail(10)">
+        <div id ="10" class="igDetail" onclick="changeBackground('10.jpg')">Seagull</div>
+      </div>
+      <div class="igGrid" style="background:url('img/11.jpg');background-size:cover" onmouseover="showdetail(11)" onmouseout="closedetail(11)">
+        <div id ="11" class="igDetail" onclick="changeBackground('11.jpg')">Fantastic</div>
+      </div>
+      <div class="igGrid" style="background:url('img/12.jpg');background-size:cover" onmouseover="showdetail(12)" onmouseout="closedetail(12)">
+        <div id ="12" class="igDetail" onclick="changeBackground('12.jpg')">Meteor</div>
+      </div>
+      <div class="igGrid" style="background:url('img/13.jpg');background-size:cover" onmouseover="showdetail(13)" onmouseout="closedetail(13)">
+        <div id ="13" class="igDetail" onclick="changeBackground('13.jpg')">Himeji</div>
+      </div>
+      <div class="igGrid" style="background:url('img/14.jpg');background-size:cover" onmouseover="showdetail(14)" onmouseout="closedetail(14)">
+        <div id ="14" class="igDetail" onclick="changeBackground('14.jpg')">Salar de Uyuni</div>
+      </div>
+      <div class="igGrid" style="background:url('img/15.jpg');background-size:cover" onmouseover="showdetail(15)" onmouseout="closedetail(15)">
+        <div id ="15" class="igDetail" onclick="changeBackground('15.jpg')">Zhangye Danxia</div>
+      </div>
+      <div class="igGrid" style="background:url('img/16.jpg');background-size:cover" onmouseover="showdetail(16)" onmouseout="closedetail(16)">
+        <div id ="16" class="igDetail" onclick="changeBackground('16.jpg')">Boston</div>
+      </div>
+      <div class="igGrid" style="background:url('img/17.jpg');background-size:cover" onmouseover="showdetail(17)" onmouseout="closedetail(17)">
+        <div id ="17" class="igDetail" onclick="changeBackground('17.jpg')">Never give up</div>
+      </div>
+      <div class="igGrid" style="background:url('img/18.jpg');background-size:cover" onmouseover="showdetail(18)" onmouseout="closedetail(18)">
+        <div id ="18" class="igDetail" onclick="changeBackground('18.jpg')">Green tunnel</div>
+      </div>
+      <div class="igGrid" style="background:url('img/19.jpg');background-size:cover" onmouseover="showdetail(19)" onmouseout="closedetail(19)">
+        <div id ="19" class="igDetail" onclick="changeBackground('19.jpg')">Firefly cave</div>
+      </div>
+    </div>
+  </body>
+</html>
