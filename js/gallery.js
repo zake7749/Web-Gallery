@@ -6,7 +6,8 @@
 var showflag = 0;
 var FocusedImage = 0;
 var showRate = 3000;
-
+var musicList = ["res/1.mp3","res/2.mp3","res/3.mp3"];
+var musicflag = 0;
 var st = setInterval(slideShow, showRate);
 /*****************************************************************
 
@@ -89,11 +90,11 @@ function change(flag){
 *****************************************************************/
 function startshow(){
   showflag = (showflag==0) ? 1 : 0;
-  but = document.getElementById("slide");
+  btn = document.getElementById("slide");
   if(showflag){
-    but.innerHTML = "Show-OFF";
+    btn.innerHTML = "Show-OFF";
   }else{
-    but.innerHTML = "Show-ON"
+    btn.innerHTML = "Show-ON"
   }
   //alert(showflag);
 }
@@ -103,10 +104,25 @@ function slideShow(){
     FocusedImage = (FocusedImage==19) ? 0 : FocusedImage+1;
     if(FocusedImage<10){
       str = "0" + FocusedImage;
+    }else{
+      str = FocusedImage;
     }
     path = "url('img/" + str + ".jpg')";
     //alert(path);
+    var ref = "img/" + str + ".jpg";
     $("#img").css("background-image",path);
-
+    $("#download").attr("href",ref);
   }
+}
+
+/*****************************************************************
+
+                          Music Player
+
+*****************************************************************/
+
+function changeMusic(){
+  musicflag = (musicflag==2) ? 0 : musicflag+1;
+  $("#musicplayer").attr("src",musicList[musicflag]);
+  $("#CGM").html("BGM - 0" + musicflag);
 }
